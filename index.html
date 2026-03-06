@@ -43,18 +43,21 @@
         .links {
             display: flex;
             gap: 20px;
-            flex-wrap: wrap; /* Ensures links wrap nicely on mobile */
+            flex-wrap: wrap;
         }
 
-        .links a {
+        .links a, .item-title a {
             text-decoration: none;
             color: var(--secondary);
             font-weight: 500;
-            font-size: 0.95rem;
             transition: color 0.2s ease;
         }
 
-        .links a:hover {
+        .item-title a {
+            color: var(--text);
+        }
+
+        .links a:hover, .item-title a:hover {
             color: var(--text);
             text-decoration: underline;
         }
@@ -141,7 +144,10 @@
         <h2>Highlights</h2>
         <div class="grid">
             <div class="item">
-                <div class="item-title"><span class="tag">BLOG</span> brunch.co.kr</div>
+                <div class="item-title">
+                    <span class="tag">BLOG</span> 
+                    <a href="https://brunch.co.kr/@inbaelee" target="_blank">brunch.co.kr</a>
+                </div>
                 <div class="item-desc">I used to love writing about work while at Kakao Ventures in Korean.</div>
             </div>
             <div class="item">
