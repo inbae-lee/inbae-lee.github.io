@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Personal Homepage</title>
+    <title>Inbae Lee</title>
     <style>
         :root {
             --bg: #ffffff;
@@ -19,7 +19,7 @@
             background: var(--bg);
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
 
         header {
@@ -28,30 +28,34 @@
 
         h1 {
             font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 10px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -0.02em;
         }
 
         .bio {
             font-size: 1.1rem;
-            color: var(--secondary);
-            max-width: 600px;
+            color: var(--text);
+            max-width: 650px;
+            margin-bottom: 25px;
         }
 
         .links {
-            margin-top: 20px;
+            display: flex;
+            gap: 20px;
         }
 
         .links a {
             text-decoration: none;
-            color: var(--text);
-            margin-right: 15px;
+            color: var(--secondary);
             font-weight: 500;
-            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
         }
 
         .links a:hover {
-            border-bottom: 1px solid var(--text);
+            color: var(--text);
+            text-decoration: underline;
         }
 
         section {
@@ -59,9 +63,9 @@
         }
 
         h2 {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.1em;
             color: var(--secondary);
             border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
@@ -96,16 +100,19 @@
         }
 
         .tag {
-            font-size: 0.75rem;
-            background: #f4f4f4;
-            padding: 2px 6px;
-            border-radius: 4px;
+            font-size: 0.7rem;
+            background: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 12px;
             margin-right: 5px;
-            vertical-align: middle;
+            text-transform: uppercase;
+            font-weight: bold;
         }
 
         footer {
-            margin-top: 100px;
+            margin-top: 120px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
             font-size: 0.8rem;
             color: var(--secondary);
         }
@@ -114,47 +121,47 @@
 <body>
 
     <header>
-        <h1>Your Name</h1>
+        <h1>Inbae Lee</h1>
         <div class="bio">
-            Carnegie Mellon Alumnus. Interest in crypto, finance, and building automation tools. Currently exploring the intersection of technology and property management.
+            Head of Ops at <strong>Initia</strong>. Previously at Kakao Ventures, Kakao, Samsung, Apple, Carnegie Mellon, in reverse order.
         </div>
         <div class="links">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">Telegram</a>
+            <a href="https://www.linkedin.com/in/inbaelee" target="_blank">LinkedIn</a>
+            <a href="https://standardresume.co/r/inbae" target="_blank">CV</a>
+            <a href="https://t.me/inbaelee" target="_blank">Telegram</a>
         </div>
     </header>
 
     <section>
-        <h2>Current Projects</h2>
+        <h2>Current Focus</h2>
         <div class="grid">
             <div class="item">
-                <div class="item-title"><span class="tag">GAS</span> Finance Automation Bot</div>
-                <div class="item-desc">A Telegram-integrated tool using Google Apps Script to manage multi-currency balances and financial alerts.</div>
+                <div class="item-title"><span class="tag">Web3</span> Initia</div>
+                <div class="item-desc">Building the interwoven network for omnichain rollups, streamlining operations and ecosystem growth.</div>
             </div>
             <div class="item">
-                <div class="item-title"><span class="tag">JP</span> Property Management</div>
-                <div class="item-desc">Establishing a Godo Kaisha (GK) for strategic property management in Keikyū Kamata.</div>
+                <div class="item-title"><span class="tag">Code</span> Finance & Automation</div>
+                <div class="item-desc">Developing custom tools and bots to manage financial data and operational workflows.</div>
             </div>
         </div>
     </section>
 
     <section>
-        <h2>Interests</h2>
+        <h2>Personal</h2>
         <div class="grid">
             <div class="item">
-                <div class="item-title">Active Lifestyle</div>
-                <div class="item-desc">Skiing in Zao Onsen, golfing, and finding the best running routes in Karuizawa.</div>
+                <div class="item-title">Outdoors</div>
+                <div class="item-desc">Avid skier (Zao/Hokkaido), golfer, and runner currently based in Singapore.</div>
             </div>
             <div class="item">
-                <div class="item-title">Crypto & Finance</div>
-                <div class="item-desc">Focusing on stablecoins, fixed income risks, and tax-efficient investing.</div>
+                <div class="item-title">Investments</div>
+                <div class="item-desc">Interested in fintech, crypto-native insurance, and Japanese real estate.</div>
             </div>
         </div>
     </section>
 
     <footer>
-        &copy; 2026 — Built with simplicity.
+        &copy; 2026 Inbae Lee. Built for performance.
     </footer>
 
 </body>
