@@ -84,12 +84,16 @@
         }
 
         /* Styling for links within item-desc or general prose */
-        .item-desc a {
-            color: var(--link-color);
+        .item-desc a, h2 a {
+            color: var(--link); /* Fixed from --link-color to --link */
             text-decoration: underline;
             text-decoration-thickness: 1px;
             text-underline-offset: 3px;
             transition: color 0.2s ease;
+        }
+
+        .item-desc a:hover, h2 a:hover {
+            color: var(--text);
         }
 
         .item-desc a:hover {
