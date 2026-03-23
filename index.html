@@ -83,6 +83,19 @@
             transform: translate(0, 0);
         }
 
+        /* Styling for links within item-desc or general prose */
+        .item-desc a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+            transition: color 0.2s ease;
+        }
+
+        .item-desc a:hover {
+            color: var(--text);
+        }
+
         section {
             margin-top: 60px;
         }
